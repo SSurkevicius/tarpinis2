@@ -1,0 +1,16 @@
+.bottom-signup-container {
+  @include format-section;
+  height: 350px - 100px;
+  .img {
+    background-image: $img-bg-1;
+    background-position: 20% 40%;
+    @include format-center;
+    @include format-img;
+  h2 {
+    @include format-h2;
+    margin: 20px;
+    color: $txt-color-2;
+  }
+ @include format-signup;
+  }
+}

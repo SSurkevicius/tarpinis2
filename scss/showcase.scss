@@ -1,0 +1,54 @@
+$img-1: url(../images/bg-showcase-1.jpg);
+$img-2: url(../images/bg-showcase-2.jpg);
+$img-3: url(../images/bg-showcase-3.jpg);
+
+.showcase {
+  @include format-section;
+  height: auto;
+  background: $bg-color-2;
+    .row {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      &:nth-of-type(odd){
+        flex-direction: row-reverse;
+    }
+      .showcase-img {
+        @include format-img;
+        background-position: 20% 40%;
+      }
+      &:nth-of-type(1){
+        .showcase-img {
+          background-image: $img-1;
+        }
+      }
+      &:nth-of-type(2){
+        .showcase-img {
+          background-image: $img-2;
+        }
+      }
+      &:nth-of-type(3){
+        .showcase-img {
+          background-image: $img-3;
+        }
+      }
+      .box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            @include format-h2;
+            text-align: left;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            @include format-p;
+            text-align: left;
+            margin-left: 30px;
+            line-height: 23px;
+        }
+      }
+  }
+}

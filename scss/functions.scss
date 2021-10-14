@@ -1,0 +1,25 @@
+.icon-container {
+  @include format-section;
+  background: $bg-color-1;
+  .icons {
+    width: 100%;
+    @include format-center;
+    flex-direction: row;
+    .icon {
+      width: 100%;
+      @include format-center;
+      i {
+        color: $icn-color-1;
+        font-size: 50px;
+        margin-top: 90px;
+        margin-bottom: 30px;
+      }
+      h2 {
+        @include format-h2;
+      }
+      p {
+        @include format-p;
+      }
+    }
+  }
+}

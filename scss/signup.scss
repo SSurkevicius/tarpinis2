@@ -1,0 +1,20 @@
+$img-bg-1: url(../images/bg-masthead.jpg);
+
+.signup-container {
+  @include format-section;
+  height: 350px + 50px;
+  .img {
+    background-image: $img-bg-1;
+    background-position: 20% 40%;
+    @include format-center;
+    @include format-img;
+  h1 {
+    margin: 20px;
+    font-family: $txt-style;
+    font-size: 35px;
+    font-weight: bold;
+    color: $txt-color-2;
+  }
+ @include format-signup;
+  }
+}

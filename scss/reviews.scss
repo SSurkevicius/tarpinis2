@@ -1,0 +1,58 @@
+$mar-img: url(../images/testimonials-1.jpg);
+$fre-img: url(../images/testimonials-2.jpg);
+$sar-img: url(../images/testimonials-3.jpg);
+
+
+section.reviews {
+  @include format-section;
+  height: 350px + 50px;
+  background: $bg-color-1;
+  h2 {
+      @include format-h2;
+      text-align: center;
+      margin-top: 80px;
+  }
+  div.people {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    div.person {
+      .rev-img {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-position: 50% 50%;
+        background-size: cover;
+      }
+      &:nth-of-type(1) {
+        .rev-img {
+                background-image: $mar-img;
+        }
+      }
+      &:nth-of-type(2) {
+        .rev-img {
+                background-image: $fre-img;
+        }
+      }
+      &:nth-of-type(3) {
+        .rev-img {
+                background-image: $sar-img;
+        }
+      }
+
+      h3{
+        @include format-h3;
+        line-height: 25px;
+      }
+      p {
+        @include format-p;
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+  }
+}
